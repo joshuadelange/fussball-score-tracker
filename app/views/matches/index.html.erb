@@ -1,5 +1,10 @@
 <h2>Latest matches</h2>
 
-<% @matches.each do |match| %>
-  <p><%=match.created_at%></p>
-<% end %>
+<ul class="matches">
+  <% @matches.each do |match| %>
+    <li>
+      <p><%=match.orange_defense_player.name%>, <%=match.orange_offense_player.name%> (<%=match.orange_score%>)</p>
+      <p><%=match.white_defense_player.name%>, <%=match.white_offense_player.name%> (<%=match.white_score%>)</p>
+    </li>
+  <% end %>
+</ul>

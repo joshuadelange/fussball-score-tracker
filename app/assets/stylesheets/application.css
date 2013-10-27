@@ -11,3 +11,57 @@
  *= require_self
  *= require_tree .
  */
+
+.navbar .btn {
+	margin-top: 7px;
+	margin-right: 7px;
+}
+
+.navbar-nav {
+	margin: 0 !important;
+}
+
+.navbar-nav>li {
+	float: left;
+}
+
+.navbar-nav>li>a{
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+
+.navbar-header {
+	width: 100%;
+}
+
+.container ul {
+	padding: 0;
+}
+
+.container ul li {
+	list-style-type: none;
+	padding: 10px 0;
+
+	border-bottom: 1px solid #dadada;
+}
+
+.container ul.matches li:before {
+	content: 'VS';
+	color: silver;
+	/*float: left;*/
+	position: relative;
+	top: 20px;
+	left: 50%;
+	margin-left: -70px;
+}
+
+.container ul li:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.container ul li p {
+	width: 50%;
+	float: left;
+}

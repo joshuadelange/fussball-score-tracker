@@ -4,7 +4,7 @@ class MatchesController < ApplicationController
 
   # renders latest matches
   def index
-    @matches = Match.all()
+    @matches = Match.order('created_at DESC').all
   end
 
   # renders form
@@ -53,10 +53,6 @@ class MatchesController < ApplicationController
     end
 
     match_data[:created_by_ip] = request.remote_ip
-
-    puts "\nError:\n"
-    puts @error
-    puts "\n\n"
 
     if @error != ""
       render "new"

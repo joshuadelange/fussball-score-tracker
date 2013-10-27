@@ -2,17 +2,41 @@
 <html>
 <head>
   <title>Fussball Score Tracker</title>
+  
+  <!-- Latest compiled and minified CSS -->
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <a href="/">Top players</a>
-  <a href="/matches">Latest matches</a>
-  <a href="/matches/new">Add match</a>
 
-  <%= yield %>
+  <nav class="navbar navbar-default">
+
+    <div class="navbar-header">
+
+      <a href="/" class="navbar-brand pull-left">Fussball Score Tracker</a>
+
+      <div class="pull-left">
+
+        <ul class="nav navbar-nav">
+          <li><a href="/">Top players</a></li>
+          <li><a href="/matches">Latest matches</a></li>
+        </ul>
+
+      </div>
+
+      <a class="btn btn-primary pull-right" href="/matches/new">Add Match</a>
+
+    </div>
+
+  </nav>
+
+  <div class="container">
+
+    <%= yield %>
+
+  </div>
 
 </body>
 </html>
