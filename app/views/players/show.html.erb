@@ -1,9 +1,16 @@
 <h2><%=@player.name%></h2>
 
 <p>Score: <%=@player.score%></p>
-<p>Matches played: <%=@player.matches_played%></p>
-<p>Win/Lose: <%=@player.times_won%> / <%=@player.times_lost%></p>
-<p>Orange Matches played: <%=@player.orange_matches_played%></p>
-<p>White Matches played: <%=@player.white_matches_played%></p>
-<p>Offense Matches played: <%=@player.offense_matches_played%></p>
-<p>Defense Matches played: <%=@player.defense_matches_played%></p>
+
+<div class="row">
+  <p class="col-xs-6">Win/Lose: <%=@player.times_won%> / <%=@player.times_lost%></p>
+  <p class="col-xs-6">Matches played: <%=@player.matches_played%></p>
+</div>
+<div class="row">
+  <p class="col-xs-6">Orange Matches played: <%=@player.orange_matches_played%></p>
+  <p class="col-xs-6">Offense Matches played: <%=@player.offense_matches_played%></p>
+</div>
+<div class="row">
+  <p class="col-xs-6">White Matches played: <%=@player.white_matches_played%></p>
+  <p class="col-xs-6">Defense Matches played: <%=@player.defense_matches_played%></p>
+</div>
