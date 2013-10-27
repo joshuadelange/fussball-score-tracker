@@ -4,30 +4,51 @@
     <p><%= @error %></p>
   <% end %>
 
-  <h4>Orange team</h4>
+  <div class="row">
 
-  <label for="orange_defense_player_id">Defense</label>
-  <input type="text" name="orange_defense_player_id" id="orange_defense_player_id">
+    <div class="col-xs-6">
+    
+      <h4>Orange team</h4>
 
-  <label for="orange_offense_player_id">Offense</label>
-  <input type="text" name="orange_offense_player_id" id="orange_offense_player_id">
+      <div class="form-group">
+        <label for="orange_defense_player_id">Defense</label>
+        <input class="form-control" type="text" name="orange_defense_player_id" id="orange_defense_player_id">
+      </div>
 
-  <label for="orange_score">Score</label>
-  <input type="text" name="orange_score" id="orange_score">
+      <div class="form-group">
+        <label for="orange_offense_player_id">Offense</label>
+        <input class="form-control" type="text" name="orange_offense_player_id" id="orange_offense_player_id">
+      </div>
 
-  <h4>White team</h4>
+      <div class="form-group">
+        <label for="orange_score">Score</label>
+        <input class="form-control" type="text" name="orange_score" id="orange_score">
+      </div>
 
-  <label for="white_defense_player_id">Defense</label>
-  <input type="text" name="white_defense_player_id" id="white_defense_player_id">
+    </div>
 
-  <label for="white_offense_player_id">Offense</label>
-  <input type="text" name="white_offense_player_id" id="white_offense_player_id">
+    <div class="col-xs-6">
+  
+      <h4>White team</h4>
+      
+      <div class="form-group">
+        <label for="white_defense_player_id">Defense</label>
+        <input class="form-control" type="text" name="white_defense_player_id" id="white_defense_player_id">
+      </div>
 
-  <label for="white_score">Score</label>
-  <input type="text" name="white_score" id="white_score">
+      <div class="form-group">
+        <label for="white_offense_player_id">Offense</label>
+        <input class="form-control" type="text" name="white_offense_player_id" id="white_offense_player_id">
+      </div>
 
-  <br>
+      <div class="form-group">
+        <label for="white_score">Score</label>
+        <input class="form-control" type="text" name="white_score" id="white_score">
+      </div>
 
-  <input type="submit" value="Add match">
+    </div>
+
+  </div>
+  <input type="submit" class="btn" value="Save">
 
 </form>
