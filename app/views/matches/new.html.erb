@@ -1,0 +1,41 @@
+<!--     t.integer  "orange_offense_player_id", null: false
+    t.integer  "orange_defense_player_id", null: false
+    t.integer  "white_offense_player_id",  null: false
+    t.integer  "white_defense_player_id",  null: false
+    t.integer  "orange_score",             null: false
+    t.integer  "white_score",              null: false
+
+ -->
+<form action="/matches" method="post">
+
+  <% unless @error != "" %>
+    <p><%= @error %></p>
+  <% end %>
+
+  <h4>Orange team</h4>
+
+  <label for="orange_defense_player_id">Defense</label>
+  <input type="text" name="orange_defense_player_id" id="orange_defense_player_id">
+
+  <label for="orange_offense_player_id">Offense</label>
+  <input type="text" name="orange_offense_player_id" id="orange_offense_player_id">
+
+  <label for="orange_score">Score</label>
+  <input type="text" name="orange_score" id="orange_score">
+
+  <h4>White team</h4>
+
+  <label for="white_defense_player_id">Defense</label>
+  <input type="text" name="white_defense_player_id" id="white_defense_player_id">
+
+  <label for="white_offense_player_id">Offense</label>
+  <input type="text" name="white_offense_player_id" id="white_offense_player_id">
+
+  <label for="white_score">Score</label>
+  <input type="text" name="white_score" id="white_score">
+
+  <br>
+
+  <input type="submit" value="Add match">
+
+</form>

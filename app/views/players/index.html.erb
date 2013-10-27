@@ -1,0 +1,5 @@
+<h2>Top players</h2>
+
+<% @players.to_enum.with_index(1).each do |player, i| %>
+  <p><%=i%> <a href="/players/<%=player.id%>"><%=player.name%></a> <%=player.score%></p>
+<% end %>
