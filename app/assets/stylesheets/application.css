@@ -17,6 +17,15 @@
 	margin-right: 7px;
 }
 
+@media (max-width: 335px){
+	.navbar .btn {
+		width: 90%;
+		margin: 5%;
+		margin-top: 0;
+		float: none;
+	}
+}
+
 .navbar-nav {
 	margin: 0 !important;
 }
@@ -28,6 +37,12 @@
 .navbar-nav>li>a{
 	padding-top: 15px !important;
 	padding-bottom: 15px !important;
+}
+
+@media (max-width: 235px){
+	.navbar-nav>li>a {
+		padding: 0;
+	}
 }
 
 .navbar-header {
@@ -52,6 +67,12 @@
 	position: relative;
 	left: 50%;
 	margin-left: -70px;
+}
+
+@media (max-width: 767px){
+	.container ul.matches li:before {
+		content: '' ''
+	}
 }
 
 .container ul li:after {
