@@ -1,7 +1,11 @@
 <h2>Top players</h2>
 
-<ul>
-  <% @players.to_enum.with_index(1).each do |player, i| %>
-    <li><%=i%>. <a href="/players/<%=player.id%>"><%=player.name%></a> <span class="pull-right"><%=player.score%></span></li>
-  <% end %>
-</ul>
+<% if @players.length > 0 %>
+  <ul>
+    <% @players.to_enum.with_index(1).each do |player, i| %>
+      <li><%=i%>. <a href="/players/<%=player.id%>"><%=player.name%></a> <span class="pull-right"><%=player.score%></span></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No players yet!</p>
+<% end %>
