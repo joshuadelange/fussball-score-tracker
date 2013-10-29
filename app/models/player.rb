@@ -25,7 +25,8 @@ class Player < ActiveRecord::Base
     ")
 
     matches.each do |match|
-      if match.orange_won
+
+      if match.orange_won == 1
         score = score + match.orange_score - match.white_score
       else
         score = score + match.white_score - match.orange_score

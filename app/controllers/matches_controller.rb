@@ -44,7 +44,7 @@ class MatchesController < ApplicationController
     match_data[:white_score] = params[:white_score]
     match_data[:orange_score] = params[:orange_score]
 
-    if params[:white_score] < params[:orange_score]
+    if params[:white_score] > params[:orange_score]
       match_data[:white_won] = 1
       match_data[:orange_won] = 0
     else
